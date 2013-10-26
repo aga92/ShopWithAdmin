@@ -1,0 +1,23 @@
+<h1>Listing prices</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Product</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prices.each do |price| %>
+      <tr>
+        <td><%= price.value %></td>
+        <td><%= price.my_product.name %></td>
+        <td><%= link_to 'Show', price %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

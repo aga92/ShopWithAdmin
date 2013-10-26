@@ -1,0 +1,12 @@
+<p>
+  <strong>Value:</strong>
+  <%= @price.value %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @price.my_product.name %>
+</p>
+
+<%= link_to 'Edit', edit_admin_price_path(@price) %> |
+<%= link_to 'Back', admin_prices_path %>
